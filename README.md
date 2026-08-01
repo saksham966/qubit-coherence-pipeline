@@ -23,24 +23,21 @@ characterize a new qubit.
 
 ```
 ├── step1_kraus_operators.py         # Discrete Kraus-operator simulation (T1 & T2 decay)
-├── step1_kraus_decay.png
 ├── step2_lindblad_model.py          # Lindblad master-equation model (Qiskit Dynamics)
 ├── step2_lindblad_steady_state.png
 ├── step3_t1_measurement.py          # T1 inversion-recovery protocol + curve fit
 ├── step3_t1_inversion_recovery.png
 ├── step4_t2_ramsey.py               # T2* Ramsey protocol (with quasi-static noise)
-├── step4_t2_ramsey.png
-├── step4_results.npz                # Cached parameters reused by Steps 5–6
+├── step4_t2_ramsey.png              
 ├── step5_hahn_echo.py               # Hahn-echo protocol (noise refocusing)
 ├── step5_hahn_echo.png
 ├── step5_results.npz
-├── step6_parameter_sweep.py         # Γφ sweep: T2* & T2_echo vs. dephasing rate
-├── step6_parameter_sweep.png
-├── D6_hardware_memo.md              # Physical interpretation memo (~400 words)
+├── step6_parameter_sweep.py         # Γφ sweep: T2* & T2_echo vs. dephasing rat
+
 └── README.md
 ```
 
-Run the scripts in order (1 → 6); Steps 5 and 6 depend on `step4_results.npz`.
+Run the scripts in order (1 → 6); Steps 5 and 6 `.
 
 ---
 
@@ -91,7 +88,7 @@ pip install numpy scipy matplotlib qiskit qiskit-dynamics --break-system-package
 - [x] D3 — T2 Ramsey (oscillating decay + fit + 95% CI)
 - [x] D4 — Hahn echo (T2_echo vs. T2* comparison + explanation)
 - [x] D5 — Parameter sweep (T2*, T2_echo vs. Γφ, theory overlay)
-- [x] D6 — Hardware memo (~400 words, cites Krantz et al. 2019 & Oliver-Welander 2013)
+
 
 ---
 
